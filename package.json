@@ -1,15 +1,21 @@
 {
   "name": "goose-calculator-app",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "dev": "vite --mode development",
+    "build": "tsc && vite build --mode production",
+    "preview": "vite preview --mode production",
+    "lint": "tsc --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "typescript": "~5.9.3",
-    "vite": "^7.3.1"
-  }
+    "typescript": "^5.9.3",
+    "vite": "^4.3.0"
+  },
+  "dependencies": {},
+  "author": "Your Name",
+  "license": "MIT",
+  "description": "A calculator application built with Vite and TypeScript"
 }
